@@ -27,8 +27,17 @@ A lightweight, **Python web scraper** powered by **Selenium WebDriver**.
 
 ```bash
 git clone https://github.com/volodymyrbiryuk/sesc.git
-cd selenium-webscraper
+cd sesc
 uv sync
+```
+
+## Usage
+
+```python
+from sesc.src import scraper
+
+for markup  in scraper.download_rendered_markup(['https://google.com']):
+    print(markup)
 ```
 
 ## License
