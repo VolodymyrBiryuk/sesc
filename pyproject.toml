@@ -3,8 +3,8 @@ requires = ["setuptools>=61", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "SESC"
-version = "0.1.0"
+name = "sesc"
+version = "0.1.1"
 description = "A selenium-powered web scraper."
 readme = "README.md"
 requires-python = ">=3.13"
