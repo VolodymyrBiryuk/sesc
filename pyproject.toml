@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "SESC"
+version = "0.1.0"
+description = "A selenium-powered web scraper."
+readme = "README.md"
+requires-python = ">=3.13"
+license = { file = "LICENSE" }
+
+authors = [
+  { name = "Volodymyr Biryuk", email = "volodymyr.biryuk@gmail.com" }
+]
+
+dependencies = [
+    "selenium>=4.37.0",
+    "seleniumbase~=4.43.0",
+    "tqdm~=4.67.1",
+    "loguru~=0.7.3"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
